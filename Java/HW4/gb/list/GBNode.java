@@ -1,9 +1,9 @@
 package HW4.gb.list;
 
 public class GBNode<T> {
-    T data;
-    GBNode<T> prev;
-    GBNode<T> next;
+    public T data;
+    public GBNode<T> prev;
+    public GBNode<T> next;
 
     public GBNode(T data, GBNode<T> prev, GBNode<T> next) {
         this.data = data;

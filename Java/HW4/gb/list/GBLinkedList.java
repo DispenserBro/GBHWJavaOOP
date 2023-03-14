@@ -106,7 +106,8 @@ public class GBLinkedList<T> implements GBDeque<T>, GBList<T> {
 
     @Override
     public void update(int i, T t) {
-
+        GBNode<T> currentNode = getNode(i);
+        currentNode.data = t;
     }
 
     @Override
