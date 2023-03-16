@@ -119,9 +119,9 @@ public class GBLinkedList<T> implements GBDeque<T>, GBList<T> {
         if (actualSize < 1) return sb.toString();
 
         sb
-                .append(" Size: ")
-                .append(actualSize)
-                .append( " {");
+            .append(" Size: ")
+            .append(actualSize)
+            .append( " {");
         for (T el: this) {
             sb.append(el);
             sb.append(el == tail.data ? "}" : ", ");
