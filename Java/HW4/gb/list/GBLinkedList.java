@@ -114,7 +114,7 @@ public class GBLinkedList<T> implements GBDeque<T>, GBList<T> {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb
-                .append(this.getClass().getSimpleName());
+            .append(this.getClass().getSimpleName());
 
         if (actualSize < 1) return sb.toString();
 
