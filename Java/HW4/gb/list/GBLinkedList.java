@@ -60,6 +60,8 @@ public class GBLinkedList<T> implements GBDeque<T>, GBList<T> {
 
     @Override
     public GBLinkedList<T> add(int i, T t) {
+        if (i < 0 || i >= actualSize) return this;
+        
         GBNode<T> current = getNode(i);
         GBNode<T> temp = new GBNode<>(t, current.prev, current);
         current.prev.next = temp;

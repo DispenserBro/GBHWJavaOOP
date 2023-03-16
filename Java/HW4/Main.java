@@ -10,7 +10,8 @@ public class Main {
         integers
                 .add(2)
                 .add(3)
-                .add(4);
+                .add(4)
+                .add(10, 11); // Не добавится
         integers.addFirst(5);
         integers.addLast(10);
 
