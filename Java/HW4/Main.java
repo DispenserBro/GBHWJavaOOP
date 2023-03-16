@@ -22,6 +22,10 @@ public class Main {
         integers.removeLast();
         System.out.println(integers);
 
+        integers.update(0, 10);
+        System.out.println(integers);
 
+        System.out.println("Current size: " + integers.size());
+        System.out.println("El at 0 index: " + integers.get(0));
     }
 }

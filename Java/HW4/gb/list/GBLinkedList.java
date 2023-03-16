@@ -78,7 +78,11 @@ public class GBLinkedList<T> implements GBDeque<T>, GBList<T> {
     }
 
     @Override
-    public T get(int i) { return getNode(i).data; }
+    public T get(int i) {
+        if (i < 0 || i >= actualSize) return null;
+
+        return getNode(i).data;
+    }
 
     @Override
     public void remove(int i) {

@@ -6,5 +6,4 @@ public interface GBDeque<T> extends Iterable<T>{
     void addLast(T t);
     void removeFirst();
     void removeLast();
-    T get(int i);
 }
