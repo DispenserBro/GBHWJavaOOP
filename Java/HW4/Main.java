@@ -1,6 +1,7 @@
 package HW4;
 
 import HW4.gb.list.GBLinkedList;
+import HW4.gb.list.GBNode;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,5 +29,7 @@ public class Main {
 
         System.out.println("Current size: " + integers.size());
         System.out.println("El at 0 index: " + integers.get(0));
+
+        for (Integer el : integers) System.out.println(el);
     }
 }
